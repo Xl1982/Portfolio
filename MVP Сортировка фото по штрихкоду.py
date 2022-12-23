@@ -50,7 +50,7 @@ def o():
                         "&", ' ').replace("*", ' ').replace("b", ' ').replace(" ", '').replace("?", '').replace("\\", '')
                 print('Печатаем порядковый номер фотографии:',pnom)
                 i.close()
-                for treshold_number in range(1, 250, 5):
+                for treshold_number in range(1, 254, 1):
                     img_grey = cv2.imread(filename, cv2.IMREAD_GRAYSCALE)
                     thresh = treshold_number
                     img_binary = cv2.threshold(img_grey, thresh, 255, cv2.THRESH_BINARY)[1]
